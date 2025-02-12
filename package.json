@@ -1,0 +1,40 @@
+{
+  "name": "i0x5f3759df.lol",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"next dev --turbopack\" \"ts-node src/server.ts\"",
+    "build": "next build && tsc --project tsconfig.server.json",
+    "start": "concurrently \"next start\" \"ts-node src/server.ts\"",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "concurrently": "^8.0.1",
+    "dotenv": "^16.4.7",
+    "formidable": "^3.5.2",
+    "mime-types": "^2.1.35",
+    "multiparty": "^4.2.3",
+    "next": "15.1.7",
+    "pg": "^8.13.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "uuid": "^11.0.5"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/formidable": "^3.4.5",
+    "@types/mime-types": "^2.1.4",
+    "@types/multiparty": "^4.2.1",
+    "@types/node": "^20.17.17",
+    "@types/pg": "^8.11.11",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.7",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.7.3"
+  }
+}
